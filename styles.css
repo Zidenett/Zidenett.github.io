@@ -1,0 +1,89 @@
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #fdf9f9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.img {
+
+    margin-top: 10px;
+    margin_right: 100px;
+
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.foot {
+
+    margin_left: 10123120px;
+ 
+ }
+ 
+ .logo {
+     margin-left: 30px;
+     margin-top: 5px;
+ }
+ 
+ .logo a {
+     text-decoration: none;
+     color: #292727;
+     text-transform: uppercase;
+     font-size: 20px;
+ }
+ 
+ .navbar a {
+     display: block;
+     padding: 20px 20px;
+     color: #161515;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 20px;
+ }
+ 
+ .navbar a:hover {
+     background: #fffdfd;
+ }
+ 
+ .header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ 
+ }
+ 
+ .header {
+     height: 60vh !important;
+     background: url(img/calendar.png) no-repeat center;
+     background-size: 800px;
+     
+ }
+
+ p {
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    size: 100px;
+    color:#292727 ;
+ }
+
+ a {
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ h1 {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+}
