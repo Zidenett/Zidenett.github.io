@@ -27,14 +27,15 @@
         print(f'{question} va a ser el número \n\n')
     
         divider = 2
-    
+
+        print('anota las *dos* cosas que van a aparecer')
         while question > 1:
             if question % divider == 1:
                 divider += 1
                 continue
             else:
                 question = question / divider
-                print(f'{question} va a ser el numero, el número con el que se dividió es {divider}, por favor anota las dos cosas si no quieres que la maestra no te acepte tu trabajo')
+                print(f'{question}, el número con el que se dividió es {divider}')
                 divider = 2
                 continue
         print('completado')  
