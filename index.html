@@ -1,92 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cobao</title>
+    <title>tareas</title>
 </head>
 <body>
 
+    <h1>Nada especial, solo cosas para hacer tareas</h1>
 
-    <div class="head">
+    <hr>
 
-        <div class="logo">
-            <img src="img/Sin título.png" alt="logo" width="55">
-        </div>
+    <py-script>
+        question = input('Ingresa el número: ')
 
-        <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Conacto</a>
-            <a href="#">Que hacemos</a>
-            <a href="#">Precio</a>
-        </nav>
-
-    </div>
-
-    <div class="img">
-        <img src="img/calendar.png" alt="">
-    </div>
-
-    <div class="quesomos">
-
-        <h2>
-                                                                                                                   Qúe somos? 
-        </h2>
-
-        <p>
-            Textotextotextotextotextotextotextotextotextotexto
-            textotextotextotextotextotextotextotextotextotexto  <br>
-            textoteTextotextotextotextotextotextotextotextotex
-            totextotextotextotextotextotextotextotextotextotex <br>
-            totextotextoteTextotextotextotextotextotextotextot
-            extotextotextotextotextotextotextotextotextotextot <br>
-            extotextotextotextoteTextotextotextotextotextotexto
-            textotextotextotextotextotextotextotextotextotextot <br>
-            extotextotextotextotextoteTextotextotextotextotextot
-            extotextotextotextotextotextotextotextotextotextote
-            xtotextotextotextotextotextoteTextotextotextotextote <br>
-            xtotextotextotextotextotextotextotextotextotextotext
-            otextotextotextotextotextotextoteTextotextotextotexto
-            textotextotextotextotextotextotextotextotextotextotext <br>
-            otextotextotextotextotextotextoteTextotextotex
-            totextotextotextotextotextotextotextotextote
-            xtotex
-            totextotextotextotextotextotextotextotextoteTextote
-            xtotextotextotextotextotextotextotextotext  <br>
-            otextotextotextotextotextotextotextotextotextotexto
-            textoteTextotextotextotextotextotextotextot
-            extotextotextotextotextotextotextotextotextote <hr>
-        </p>
-
-        <h2>
-                                                                                                              Por qúe nosotros?
-        </h2>
-        <p>
-            Textotextotextotextotextotextotextotextotextotextotextotextotextotextote <br> xtotextotextotextotexto
-            textotextoteTextotextotextotextotextotextotextotextotextotextotextotextotextotextotextotext
-            otextotextotextotextotextoteTextotextotextotextotextotextotextotextotextot <br> extotextotextotext
-            otextotextotextotextotextotextotextotextoteTextotextotextotextotextotextotextotextotextotex
-            totextotextotextotextotextotextotextotextotextotextotextoteTextot <br> extotextotextotextotextote
-            xtotextotextotextotextotextotextotextotextotextotextotextotextotextotextoteTextotextotextot
-            extotextotextotextotextotextotextotextotextotextotextotextotext <br> otextotextotextotextotextote
-            Textotextotextotextotextotextotextotextotextotextotextotextotextotextotextotextotextotextot
-            extotextotextoteTextotextotextotextotextotextotextotextotextotextotexto <br> textotextotextotexto
-            textotextotextotextotextotextoteTextotextotextotextotextotextotextotextotex <br> totextotextotext
-            otextotextotextotextotextotextotextotextotextoteTextotextotextotextotextotextotextotextote
-            xtotextoxtotex <br> totextotextotextotextotextotextotextotextotextote <br>
-            aa
-
-        </p>
-    </div>
+        try:
+            question = int(question)
+        except ValueError:
+            print('Solo números, ingresa el número de nuevo')
+            question = input('Número: ')
+        finally:
+            print('\n\n')
     
-    <div class="unete">
+        print(f'{question} va a ser el número \n\n')
+    
+        divider = 2
+    
+        while question > 1:
+            if question % divider == 1:
+                divider += 1
+                continue
+            else:
+                question = question / divider
+                print(int(question))
+                divider = 2
+                continue
+        print('completado')  
+    </py-script>
 
-        <h1>
-            <a href="unete.html"><h1>_______________________________¡Únete!________________________________</h1></a>
-        </h1>
-    </div>
 </body>
 </html>
