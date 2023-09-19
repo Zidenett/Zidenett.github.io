@@ -14,31 +14,35 @@
     <hr>
 
     <py-script>
-        question = input('Ingresa el número: ')
-
-        try:
-            question = int(question)
-        except ValueError:
-            print('Solo números, ingresa el número de nuevo')
-            question = input('Número: ')
-        finally:
-            print('\n\n')
-    
-        print(f'{question} va a ser el número \n\n')
-    
-        divider = 2
-
-        print('anota las *dos* cosas que van a aparecer')
-        while question > 1:
-            if question % divider == 1:
-                divider += 1
-                continue
+        def user_input():
+            question = input('numero:')
+        
+            try:
+                number = int(question)
+            except ValueError:
+                print('solo numeros')
+                exit(0)
             else:
-                question = question / divider
-                print(f'{int(question)}, el número con el que se dividió es {divider}')
-                divider = 2
-                continue
-        print('completado')  
+                print('calculando')
+        
+            numb_count = 1
+        
+            while numb_count != 10:
+                print(f'{numb_count}: {number * numb_count}')
+                numb_count += 1
+            retry()
+    
+    
+        def retry():
+            retry = input('de nuevo? s/n ')
+            if retry == 'n':
+                print('ok')
+                exit(0)
+            else:
+                user_input()
+        
+    
+        user_input()  
     </py-script>
 
 </body>
